@@ -3,17 +3,23 @@ package com.quest.model;
 public class GameState {
     private String playerName;
     private int currentQuestionId;
-    private int gamePlayed;
+    private int gamesPlayed;
     private String lastResult;
 
     public GameState() {
     }
 
-    public GameState(String playerName, int currentQuestionId, int gamePlayed, String lastResult) {
+    public GameState(String playerName, int currentQuestionId, int gamesPlayed, String lastResult) {
         this.playerName = playerName;
         this.currentQuestionId = currentQuestionId;
-        this.gamePlayed = gamePlayed;
+        this.gamesPlayed = gamesPlayed;
         this.lastResult = lastResult;
+    }
+
+    public GameState(String playerName, int currentQuestionId, int gamesPlayed) {
+        this.playerName = playerName;
+        this.currentQuestionId = currentQuestionId;
+        this.gamesPlayed = gamesPlayed;
     }
 
     public String getPlayerName() {
@@ -32,12 +38,12 @@ public class GameState {
         this.currentQuestionId = currentQuestionId;
     }
 
-    public int getGamePlayed() {
-        return gamePlayed;
+    public int getGamesPlayed() {
+        return gamesPlayed;
     }
 
-    public void setGamePlayed(int gamePlayed) {
-        this.gamePlayed = gamePlayed;
+    public void setGamesPlayed(int gamesPlayed) {
+        this.gamesPlayed = gamesPlayed;
     }
 
     public String getLastResult() {
