@@ -26,11 +26,7 @@ public class GameState {
         return playerName;
     }
 
-    public void setPlayerName(String playerName) {
-        this.playerName = playerName;
-    }
-
-    public int getCurrentQuestionId() {
+     public int getCurrentQuestionId() {
         return currentQuestionId;
     }
 
@@ -40,10 +36,6 @@ public class GameState {
 
     public int getGamesPlayed() {
         return gamesPlayed;
-    }
-
-    public void setGamesPlayed(int gamesPlayed) {
-        this.gamesPlayed = gamesPlayed;
     }
 
     public String getLastResult() {

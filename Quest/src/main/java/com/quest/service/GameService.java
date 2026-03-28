@@ -72,7 +72,7 @@ public class GameService {
 
     public boolean isEnding(String target){
         return target != null && target.startsWith("win")
-                && target.startsWith("lose")
-                && target.startsWith("neutral");
+                || target.startsWith("lose")
+                || target.startsWith("neutral");
     }
 }

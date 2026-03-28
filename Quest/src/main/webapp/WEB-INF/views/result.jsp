@@ -1,16 +1,21 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: u
-  Date: 23.03.2026
-  Time: 22:26
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
 
-</body>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<html>
+    <head>
+        <title>Киберпанк: Взлом OmniCorp</title>
+    </head>
+
+    <body>
+        <h1>${ending.title}</h1>
+        <p>${ending.text}</p>
+        <p>Игрок: ${gameState.playerName}</p>
+        <p>Сыграно игр: ${gameState.gamesPlayed}</p>
+        <form action="${pageContext.request.contextPath}/start" method="post">
+            <input type="hidden" name="playerName" value="${gameState.playerName}">
+            <button type="submit">Начать новую игру</button>
+        </form>
+
+    </body>
 </html>
